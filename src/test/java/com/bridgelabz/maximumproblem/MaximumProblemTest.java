@@ -29,42 +29,42 @@ public class MaximumProblemTest {
     @Test
     public void givenMaxNumberAt1stPosition_ShouldReturnSameFloatNumber() {
         MaximumProblem maximumProblem = new MaximumProblem();
-        Float aFloat = maximumProblem.checkMaximumFloatNumber(3.50f, 2.20f, 1.00f);
+        Float aFloat = maximumProblem.checkMaximumNumber(3.50f, 2.20f, 1.00f);
         Assert.assertEquals(3.50f,aFloat,0.00);
     }
 
     @Test
     public void givenMaxNumberAt2ndPosition_ShouldReturnSameFloatNumber() {
         MaximumProblem maximumProblem = new MaximumProblem();
-        Float aFloat = maximumProblem.checkMaximumFloatNumber(2.20f, 3.50f, 1.00f);
+        Float aFloat = maximumProblem.checkMaximumNumber(2.20f, 3.50f, 1.00f);
         Assert.assertEquals(3.50f,aFloat,0.00);
     }
 
     @Test
     public void givenMaxNumberAt3rdPosition_ShouldReturnSameFloatNumber() {
         MaximumProblem maximumProblem = new MaximumProblem();
-        Float aFloat = maximumProblem.checkMaximumFloatNumber(2.20f, 1.00f, 3.50f);
+        Float aFloat = maximumProblem.checkMaximumNumber(2.20f, 1.00f, 3.50f);
         Assert.assertEquals(3.50f,aFloat,0.00);
     }
 
     @Test
     public void givenMaxStringAt1stPosition_ShouldReturnSameString() {
         MaximumProblem maximumProblem = new MaximumProblem();
-        String string = maximumProblem.checkMaximumString("Peach", "Apple", "Banana");
+        String string = maximumProblem.checkMaximumNumber("Peach", "Apple", "Banana");
         Assert.assertEquals("Peach",string);
     }
 
     @Test
     public void givenMaxStringAt2ndPosition_ShouldReturnSameString() {
         MaximumProblem maximumProblem = new MaximumProblem();
-        String string = maximumProblem.checkMaximumString("Apple", "Peach", "Banana");
+        String string = maximumProblem.checkMaximumNumber("Apple", "Peach", "Banana");
         Assert.assertEquals("Peach",string);
     }
 
     @Test
     public void givenMaxStringAt3rdPosition_ShouldReturnSameString() {
         MaximumProblem maximumProblem = new MaximumProblem();
-        String string = maximumProblem.checkMaximumString("Apple", "Banana", "Peach");
+        String string = maximumProblem.checkMaximumNumber("Apple", "Banana", "Peach");
         Assert.assertEquals("Peach",string);
     }
 }
