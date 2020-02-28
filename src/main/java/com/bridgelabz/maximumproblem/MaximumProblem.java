@@ -1,13 +1,27 @@
 package com.bridgelabz.maximumproblem;
 
-public class MaximumProblem {
+public class MaximumProblem <E extends Comparable<E>>{
 
-    public <E extends Comparable> E checkMaximumNumber(E num1, E num2, E num3) {
-        E max=num1;
-        if(max.compareTo(num2)<0)
-            max=num2;
-        if(max.compareTo(num3)<0)
-            max=num3;
+    E a;
+    E b;
+    E c;
+
+    public MaximumProblem(E a, E b, E c) {
+        this.a=a;
+        this.b=b;
+        this.c=c;
+    }
+
+    public E checkMaximumNumber(){
+        return checkMaximumNumber(a,b,c);
+    }
+
+    public static <E extends Comparable<E>> E checkMaximumNumber(E a,E b, E c) {
+        E max=a;
+        if(max.compareTo(b)<0)
+            max=b;
+        if(max.compareTo(c)<0)
+            max=c;
         return max;
     }
 
