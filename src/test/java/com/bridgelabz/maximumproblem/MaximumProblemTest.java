@@ -46,4 +46,25 @@ public class MaximumProblemTest {
         Float aFloat = maximumProblem.checkMaximumFloatNumber(2.20f, 1.00f, 3.50f);
         Assert.assertEquals(3.50f,aFloat,0.00);
     }
+
+    @Test
+    public void givenMaxStringAt1stPosition_ShouldReturnSameString() {
+        MaximumProblem maximumProblem = new MaximumProblem();
+        String string = maximumProblem.checkMaximumString("Peach", "Apple", "Banana");
+        Assert.assertEquals("Peach",string);
+    }
+
+    @Test
+    public void givenMaxStringAt2ndPosition_ShouldReturnSameString() {
+        MaximumProblem maximumProblem = new MaximumProblem();
+        String string = maximumProblem.checkMaximumString("Apple", "Peach", "Banana");
+        Assert.assertEquals("Peach",string);
+    }
+
+    @Test
+    public void givenMaxStringAt3rdPosition_ShouldReturnSameString() {
+        MaximumProblem maximumProblem = new MaximumProblem();
+        String string = maximumProblem.checkMaximumString("Apple", "Banana", "Peach");
+        Assert.assertEquals("Peach",string);
+    }
 }

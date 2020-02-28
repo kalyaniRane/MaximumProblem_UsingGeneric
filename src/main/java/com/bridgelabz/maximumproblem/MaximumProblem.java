@@ -19,4 +19,14 @@ public class MaximumProblem {
             max=num3;
         return max;
     }
+
+    public String checkMaximumString(String str1, String str2, String str3) {
+
+        String max=str1;
+        if(max.compareTo(str2)<0)
+            max=str2;
+        if(max.compareTo(str3)<0)
+            max=str3;
+        return max;
+    }
 }
