@@ -34,6 +34,11 @@ public class MaximumProblem <E extends Comparable<E>>{
                 max=optionalArguments[0];
             }
         }
+        printMax(max);
         return max;
+    }
+
+    private static <E extends Comparable<E>> void printMax(E max) {
+        System.out.println("Maximum is: "+max);
     }
 }

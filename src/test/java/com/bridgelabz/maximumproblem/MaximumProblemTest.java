@@ -70,21 +70,18 @@ public class MaximumProblemTest {
 
     @Test
     public void givenMaxIntegerNumber_MoreThanThreeNumber_ShouldeReturnSameNumber() {
-        MaximumProblem maximumProblem=new MaximumProblem(3,5,1);
         Integer integer = MaximumProblem.checkMaximumNumber(3, 5, 7, 1, 8, 9, 2);
         Assert.assertEquals((Integer) 9,integer);
     }
 
     @Test
     public void givenMaxFloatNumber_MoreThanThreeNumber_ShouldeReturnSameNumber() {
-        MaximumProblem maximumProblem=new MaximumProblem(3.2f,5.6f,1.0f);
         Float aFloat = MaximumProblem.checkMaximumNumber(3.2f, 5.7f, 1.0f, 2.7f, 4.6f, 7.9f);
         Assert.assertEquals(7.9f,aFloat,0.00);
     }
 
     @Test
     public void givenLargeString_MoreThanThree_ShouldeReturnSameString() {
-        MaximumProblem maximumProblem = new MaximumProblem("Apple", "Peach", "Banana");
         String string = MaximumProblem.checkMaximumNumber("Apple","Peach","Banana","WaterMellon","Cucumber","Grapes");
         Assert.assertEquals("WaterMellon",string);
     }
